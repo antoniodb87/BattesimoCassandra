@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invito Battesimo di Cassandra</title>
+    <!-- Carica Tailwind CSS per uno stile moderno e reattivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Inserisci la tua immagine di sfondo qui, sostituendo l'URL */
+            background-image: url('https://i.postimg.cc/3J9ccf6b/Gemini-Generated-Image-hmooznhmooznhmoo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .cursive-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Classe per l'animazione */
+        .animate-bounce-slow {
+            animation: bounce-slow 2s infinite;
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% {
+                transform: translateY(-5%);
+                animation-timing-function: cubic-bezier(0.8,0,1,1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0,0,0.2,1);
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-12">
+
+    <!-- Contenitore principale dell'invito -->
+    <div class="max-w-xl mx-auto bg-white bg-opacity-90 rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        
+        <!-- Intestazione -->
+        <div class="relative w-full py-12 bg-white bg-opacity-70 flex justify-center items-center">
+            <div class="relative z-10 text-center p-4">
+                <p class="mt-2 text-2xl md:text-3xl font-bold text-gray-800 tracking-wide cursive-font">
+                    Il Battesimo di Cassandra
+                </p>
+                <p class="mt-2 text-xl font-bold text-gray-700">
+                    Venerdì 3 ottobre 2025 alle ore 11:00
+                </p>
+            </div>
+        </div>
+
+        <!-- Corpo dell'invito con il testo -->
+        <div class="p-8 md:p-10 text-center text-gray-800">
+
+            <p class="text-lg md:text-xl leading-relaxed mb-6 font-light">
+                Con gioia e amore, vi invitiamo a condividere un momento speciale: il Battesimo della nostra amata figlia <strong class="text-pink-500 text-3xl md:text-4xl"><em class="cursive-font">Cassandra</em></strong>.
+            </p>
+
+            <div class="mb-8">
+                <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"><em class="cursive-font">Cerimonia</em></h3>
+                 <p class="text-lg font-medium text-gray-600">
+                    <br>Basilica di San Pietro
+                </p>
+                <p class="text-base text-gray-500 italic">
+                    Piazza San Pietro - 00120 Città Del Vaticano (RM)
+                
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"><em class="cursive-font">Festa</em></h3>
+                <p class="text-lg font-medium text-gray-600">
+                    <br>Villa Gianicolense
+                </p>
+                <p class="text-base text-gray-500 italic">
+                    Via del Forte Bravetta, 255, 00145 Roma RM
+                </p>
+            </div>
+
+            <p class="text-base md:text-lg mb-8 italic text-gray-700">
+                Vi aspettiamo con affetto!
+            </p>
+
+            <!-- Pulsante per la conferma della presenza -->
+            <!-- IMPORTANTE: Sostituisci il link qui sotto con il link al tuo Google Form o a un altro modulo RSVP -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSebjX7PfNJFTGAgeXftKNVED5EiummdKun7I6y49si5RGvUKw/viewform?usp=header">
+                Conferma la tua presenza
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
