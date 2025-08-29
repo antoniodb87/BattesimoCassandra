@@ -7,22 +7,24 @@
     <!-- Carica Tailwind CSS per uno stile moderno e reattivo -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Importa il font "Dancing Script" per i titoli e il nome */
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
-            /* Inserisci la tua immagine di sfondo qui, sostituendo l'URL */
+            /* Immagine di sfondo con copertura completa e fissata */
             background-image: url('https://i.postimg.cc/3J9ccf6b/Gemini-Generated-Image-hmooznhmooznhmoo.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
 
+        /* Classe per applicare il font corsivo "Dancing Script" */
         .cursive-font {
             font-family: 'Dancing Script', cursive;
         }
 
-        /* Classe per l'animazione */
+        /* Animazione per un leggero effetto di "respiro" */
         .animate-bounce-slow {
             animation: bounce-slow 2s infinite;
         }
@@ -37,47 +39,73 @@
                 animation-timing-function: cubic-bezier(0,0,0.2,1);
             }
         }
+
+        /* Regole aggiuntive per migliorare il look del pulsante */
+        .btn-cta {
+            background-image: linear-gradient(to right, #f687b3, #ec4899);
+            box-shadow: 0 4px 15px 0 rgba(236, 72, 153, 0.75);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-cta:hover {
+            box-shadow: 0 6px 20px 0 rgba(236, 72, 153, 0.9);
+            transform: translateY(-2px) scale(1.05);
+        }
+
+        /* Regola per aggiungere un sottile filtro all'immagine di sfondo, per migliorare la leggibilità */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2); /* Sottile velo bianco */
+            z-index: -1;
+        }
+
     </style>
 </head>
 <body class="p-4 md:p-12">
 
     <!-- Contenitore principale dell'invito -->
-    <div class="max-w-xl mx-auto bg-white bg-opacity-90 rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+    <div class="max-w-xl mx-auto bg-white bg-opacity-90 rounded-3xl shadow-xl overflow-hidden transform transition-transform duration-300">
         
-        <!-- Intestazione -->
+        <!-- Intestazione con titolo e data -->
         <div class="relative w-full py-12 bg-white bg-opacity-70 flex justify-center items-center">
             <div class="relative z-10 text-center p-4">
-                <p class="mt-2 text-2xl md:text-3xl font-bold text-gray-800 tracking-wide cursive-font">
+                <p class="text-3xl md:text-4xl font-bold text-gray-800 tracking-wide cursive-font mb-2">
                     Il Battesimo di Cassandra
                 </p>
-                <p class="mt-2 text-xl font-bold text-gray-700">
+                <p class="text-xl md:text-2xl font-semibold text-gray-700">
                     Venerdì 3 ottobre 2025 alle ore 11:00
                 </p>
             </div>
         </div>
 
-        <!-- Corpo dell'invito con il testo -->
+        <!-- Corpo dell'invito con testo e dettagli -->
         <div class="p-8 md:p-10 text-center text-gray-800">
 
             <p class="text-lg md:text-xl leading-relaxed mb-6 font-light">
                 Con gioia e amore, vi invitiamo a condividere un momento speciale: il Battesimo della nostra amata figlia <strong class="text-pink-500 text-3xl md:text-4xl"><em class="cursive-font">Cassandra</em></strong>.
             </p>
 
-            <div class="mb-8">
+            <!-- Sezione della Cerimonia -->
+            <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
                 <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"><em class="cursive-font">Cerimonia</em></h3>
-                 <p class="text-lg font-medium text-gray-600">
-                    <br>Basilica di San Pietro
+                <p class="text-lg font-medium text-gray-600 mb-1">
+                    Basilica di San Pietro
                 </p>
                 <p class="text-base text-gray-500 italic">
                     Piazza San Pietro - 00120 Città Del Vaticano (RM)
-                
                 </p>
             </div>
 
-            <div class="mb-8">
+            <!-- Sezione della Festa -->
+            <div class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
                 <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"><em class="cursive-font">Festa</em></h3>
-                <p class="text-lg font-medium text-gray-600">
-                    <br>Villa Gianicolense
+                <p class="text-lg font-medium text-gray-600 mb-1">
+                    Villa Gianicolense
                 </p>
                 <p class="text-base text-gray-500 italic">
                     Via del Forte Bravetta, 255, 00145 Roma RM
@@ -89,14 +117,10 @@
             </p>
 
             <!-- Pulsante per la conferma della presenza -->
-            <!-- IMPORTANTE: Sostituisci il link qui sotto con il link al tuo Google Form o a un altro modulo RSVP -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSebjX7PfNJFTGAgeXftKNVED5EiummdKun7I6y49si5RGvUKw/viewform?usp=header">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxgUakkJ4gvOxWBbkqtGr47QGvf7OXV9AXvz_Nkoh3lQa2sA/viewform?usp=dialog">
                 Conferma la tua presenza
             </a>
-
         </div>
-
     </div>
-
 </body>
 </html>
